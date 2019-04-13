@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import {Hero, Floor, Sky} from '../../components'
-import pointer from '../../public/assets/pointer.png'
+//import pointer from '../../public/assets/pointer.png'
+import { PUBLIC_URL } from './../../config/vars'
 
 
 const run = keyframes`
@@ -68,7 +69,7 @@ export const TitleStyled = styled.h1`
 `
 export const FirstLetterStyled = styled.span`
     position: relative;
-    font-size: 162px;
+    font-size: 172px;
     line-height: 25px;
     vertical-align: bottom;
     color: #f24343;
@@ -89,7 +90,7 @@ export const FirstWordStyled = styled.span`
 `
 
 export const HeaderStyled = styled.div`
-   padding: 40px 20px;
+   padding: 20px 20px;
    display: flex;
    flex-grow: 1;
    flex-direction: column;
@@ -113,7 +114,7 @@ export const MenuStyled = styled.ul`
     list-Style: none;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 0px;
     font-family: 'SubtitleFont';
     color: white;
     text-shadow: 1px 1px 0px grey;
@@ -123,7 +124,7 @@ export const MenuStyled = styled.ul`
 export const MenuItemStyled = styled.li`
     display: inline-block;
     position: relative;
-    padding: 20px 10px;
+    padding: 10px;
     text-shadow: 2px 2px 0px gray;
     cursor: pointer;
     &:hover{
@@ -133,7 +134,7 @@ export const MenuItemStyled = styled.li`
             position: absolute;
             top: 50%;
             transform: traslateY(-50%);
-            content: url(${pointer});
+            content: url(${process.env.PUBLIC_URL}/assets/poiter.png);
             transform: translate(-54px, -8px);
         }
     }
