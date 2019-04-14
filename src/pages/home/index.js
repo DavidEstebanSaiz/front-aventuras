@@ -25,13 +25,14 @@ class Home extends Component {
                         <MenuItemStyled>Perfil</MenuItemStyled>
                     </MenuStyled>
                     <BotttomStyled>
-                        <HeroContainerStyled>
-                            <HeroWrapperStyled>
-                                <Hero />
-                            </HeroWrapperStyled>
-                        </HeroContainerStyled>
                         <FloorContainerStyled>
-                            <Floor />
+                            <Floor>
+                                <HeroContainerStyled>
+                                    <HeroWrapperStyled>
+                                        <Hero />
+                                    </HeroWrapperStyled>
+                                </HeroContainerStyled>
+                            </Floor>
                         </FloorContainerStyled>
                     </BotttomStyled>
                 </HomeContainer>

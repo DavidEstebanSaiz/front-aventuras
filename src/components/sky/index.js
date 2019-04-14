@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { SkyStyled, TreeStyled, ContentStyled } from './styles'
+import { SkyStyled, TreeStyled, ContentStyled, SeaStyled } from './styles'
 import {colors} from '../../config/vars'
 
 class Sky extends Component {
@@ -17,6 +17,7 @@ class Sky extends Component {
         const { children, className } = this.props
         return(
             <SkyStyled className={className} {...config} >
+                 <SeaStyled />
                 <ContentStyled>
                     {children}
                 </ContentStyled>

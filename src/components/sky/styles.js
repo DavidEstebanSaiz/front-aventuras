@@ -12,7 +12,7 @@ export const SkyStyled = styled.div`
   background-repeat: no-repeat;
   width: 100%;
   background-sice: cover;
-  background-position: center bottom ;
+  background-position: center 81%;
   background-color: ${props=>props.skyColor?props.skyColor:colors.sky}
   z-index: 0;
 `;
@@ -34,4 +34,13 @@ export const ContentStyled = styled.div`
   bottom: 0px;
   width: 100%;
   min-height: 100vh;
+`;
+
+export const SeaStyled = styled.div`
+  position: absolute;
+  bottom: 0px;
+  height: 128px;
+  background-color: ${colors.seaBlue}
+  width: 100%;
+  border-top: solid 14px ${colors.seaBlueLight}
 `;

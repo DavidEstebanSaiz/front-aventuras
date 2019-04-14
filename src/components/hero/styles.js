@@ -19,7 +19,7 @@ export const ShadowStyled = styled.div`
    border-radius: 100%;
    height: 7px;
    width: 50px;
-   z-index: 0;
+   z-index: 1;
    left: 25px;
    background-color: ${colors.shadow}
 `;
@@ -32,5 +32,5 @@ export const SpriteStyled = styled.div`
     width: 100%;
     background: url(assets/theHero.png) left center
     animation: ${run} 1.1s steps(10) infinite;
-    z-index: 1;
+    z-index: 2;
 `;

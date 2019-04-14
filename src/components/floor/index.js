@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import { FloorStyled } from './styles'
+import { FloorStyled, ChildrenStyled, FloorFrontStyled, FloorBackStyled, ContainerStyled } from './styles'
 
-class Hero extends Component {
+class Floor extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -10,10 +10,16 @@ class Hero extends Component {
     }
 
     render(){
+        const {children} = this.props
         return(
-            <FloorStyled />
+            <ContainerStyled>
+                <FloorBackStyled />
+                <FloorStyled/>
+                <ChildrenStyled>{children}</ChildrenStyled>
+                <FloorFrontStyled />
+            </ContainerStyled>
         )
     }
 }
 
-export default Hero
+export default Floor

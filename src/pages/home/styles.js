@@ -18,8 +18,7 @@ export const HomeContainer = styled.div`
 `;
 
 export const HeroContainerStyled = styled.div`
-    position: relative;
-    bottom: -27px;
+    width: 100%;
 `;
 
 export const FloorContainerStyled = styled.div`
@@ -53,7 +52,7 @@ const getShadow = (x, color) =>{
 }
 export const TitleStyled = styled.h1`
     font-family: 'PixelFont';
-    font-size: 74px;
+    font-size: 47px;
     color: #f2e343;
     margin: 0px;
     text-shadow:
@@ -64,12 +63,12 @@ export const TitleStyled = styled.h1`
     & > span {
         background-color: white;
     }
-    line-height: 103px;
+    line-height: 1.7;
     margin-bottom: 20px;
 `
 export const FirstLetterStyled = styled.span`
     position: relative;
-    font-size: 172px;
+    font-size: 125px;
     line-height: 25px;
     vertical-align: bottom;
     color: #f24343;
@@ -134,7 +133,7 @@ export const MenuItemStyled = styled.li`
             position: absolute;
             top: 50%;
             transform: traslateY(-50%);
-            content: url(${process.env.PUBLIC_URL}/assets/poiter.png);
+            content: url(assets/pointer.png);
             transform: translate(-54px, -8px);
         }
     }
